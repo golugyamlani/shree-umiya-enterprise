@@ -1,28 +1,18 @@
 .container {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
-  padding: 20px;
-}
-
-.card {
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
   width: 100%;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .logoContainer {
   background: #ffffff;
-  padding: 30px 40px;
+  padding: 24px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #f0f0f0;
+  width: 100%;
 }
 
 .logo {
@@ -31,19 +21,25 @@
 }
 
 .content {
-  padding: 40px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
   text-align: center;
+  background: #ffffff;
 }
 
 .iconWrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: linear-gradient(135deg, #d6156c 0%, #e91e8c 100%);
   border-radius: 50%;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   animation: pulse 2s infinite;
 }
 
@@ -60,8 +56,8 @@
 }
 
 .gearIcon {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: #ffffff;
   animation: rotate 4s linear infinite;
 }
@@ -76,21 +72,22 @@
 }
 
 .title {
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   color: #2d3748;
-  margin: 0 0 16px 0;
+  margin: 0 0 20px 0;
 }
 
 .subtitle {
-  font-size: 16px;
+  font-size: 18px;
   color: #4a5568;
   line-height: 1.6;
   margin: 0 0 12px 0;
+  max-width: 600px;
 }
 
 .message {
-  font-size: 14px;
+  font-size: 16px;
   color: #718096;
   line-height: 1.5;
   margin: 0;
@@ -98,29 +95,31 @@
 
 .contactSection {
   background: #f8f9fa;
-  padding: 32px 40px;
+  padding: 50px 40px;
+  width: 100%;
 }
 
 .contactTitle {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
   color: #2d3748;
-  margin: 0 0 24px 0;
+  margin: 0 0 32px 0;
   text-align: center;
 }
 
 .contactGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto 32px auto;
 }
 
 .contactItem {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 16px;
+  gap: 16px;
+  padding: 20px;
   background: #ffffff;
   border-radius: 12px;
   text-decoration: none;
@@ -138,23 +137,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  min-width: 44px;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
   background: linear-gradient(135deg, #d6156c 0%, #e91e8c 100%);
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .contactIcon svg {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   color: #ffffff;
 }
 
 .contactDetails {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
   overflow: hidden;
 }
 
@@ -167,7 +166,7 @@
 }
 
 .contactValue {
-  font-size: 14px;
+  font-size: 15px;
   color: #2d3748;
   font-weight: 600;
   word-break: break-word;
@@ -176,12 +175,13 @@
 .addressSection {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  padding: 16px;
+  gap: 16px;
+  padding: 20px;
   background: #ffffff;
   border-radius: 12px;
   border: 1px solid #e2e8f0;
-  margin-bottom: 16px;
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
 }
 
 .addressText {
@@ -195,20 +195,22 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 12px;
+  padding: 16px;
   background: #ffffff;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .gstinLabel {
-  font-size: 12px;
+  font-size: 13px;
   color: #718096;
   font-weight: 500;
 }
 
 .gstinValue {
-  font-size: 14px;
+  font-size: 15px;
   color: #2d3748;
   font-weight: 600;
   font-family: 'Courier New', monospace;
@@ -216,25 +218,29 @@
 
 .footer {
   background: linear-gradient(135deg, #d6156c 0%, #e91e8c 100%);
-  padding: 16px 40px;
+  padding: 20px 40px;
   text-align: center;
+  width: 100%;
 }
 
 .tagline {
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   margin: 0;
   font-weight: 500;
   font-style: italic;
 }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 16px;
+@media (max-width: 900px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
   }
+}
 
+@media (max-width: 600px) {
   .logoContainer {
-    padding: 24px 20px;
+    padding: 20px;
   }
 
   .logo {
@@ -242,36 +248,36 @@
   }
 
   .content {
-    padding: 32px 24px;
+    padding: 40px 20px;
   }
 
   .iconWrapper {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
   }
 
   .gearIcon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
   }
 
   .title {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .subtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .contactSection {
-    padding: 24px 20px;
+    padding: 32px 20px;
   }
 
-  .contactGrid {
-    grid-template-columns: 1fr;
+  .contactTitle {
+    font-size: 20px;
   }
 
   .footer {
-    padding: 14px 20px;
+    padding: 16px 20px;
   }
 }
