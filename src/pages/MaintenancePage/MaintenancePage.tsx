@@ -157,10 +157,6 @@ export const MaintenancePage = () => {
           </div>
         </div>
 
-        <div className={styles.gstinSection}>
-          <span className={styles.gstinLabel}>GSTIN:</span>
-          <span className={styles.gstinValue}>{COMPANY_INFO.gstin}</span>
-        </div>
       </div>
 
       <div className={styles.footer}>
