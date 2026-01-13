@@ -1,0 +1,205 @@
+.enquireNow {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 50px 0;
+}
+
+.content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.contactInfo {
+  flex: 0 0 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.icon {
+  flex-shrink: 0;
+  color: #1a1a1a;
+}
+
+.infoText {
+  font-size: 16px;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+.infoText p {
+  margin: 0;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 12px;
+}
+
+.socialIcon {
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+  color: #d6156c;
+}
+
+.formSection {
+  flex: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.nameFields {
+  display: flex;
+  gap: 30px;
+}
+
+.nameFields .formGroup {
+  flex: 1;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 16px;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.required {
+  color: #1a1a1a;
+}
+
+.input {
+  padding: 12px 16px;
+  border: 2px solid #1a1a1a;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #d6156c;
+}
+
+.textarea {
+  padding: 12px 16px;
+  border: 2px solid #1a1a1a;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: #ffffff;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #d6156c;
+}
+
+.submitSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.submitButton {
+  background: #d6156c;
+  color: #ffffff;
+  border: none;
+  padding: 14px 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #b8125c;
+}
+
+.successMessage {
+  font-size: 14px;
+  color: #1a1a1a;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contactInfo {
+    flex: none;
+    width: 100%;
+  }
+
+  .formSection {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .enquireNow {
+    padding: 60px 0;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .nameFields {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

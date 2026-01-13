@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components';
-import { HomePage } from './pages';
+import { HomePage, ContactPage, AboutPage } from './pages';
 
 function App() {
   return (
@@ -8,7 +8,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          {/* Add more routes here as pages are created */}
+          <Route path="contact" element={<ContactPage />} />
+          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

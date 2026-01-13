@@ -8,3 +8,7 @@ export { ShopCollections } from './ShopCollections';
 export { PatentedProduct } from './PatentedProduct';
 export { PrecisionExcellence } from './PrecisionExcellence';
 export { Testimonials } from './Testimonials';
+export { CrewSection } from './CrewSection';
+export { OurStory } from './OurStory';
+export { MeetTheTeam } from './MeetTheTeam';
+export { EnquireNow } from './EnquireNow';
