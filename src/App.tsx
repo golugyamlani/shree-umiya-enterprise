@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components';
-import { HomePage, ContactPage, AboutPage, CookiePolicyPage } from './pages';
+import { HomePage, ContactPage, AboutPage, CookiePolicyPage, ProductsPage } from './pages';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
           <Route path="contact" element={<ContactPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="products" element={<ProductsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
