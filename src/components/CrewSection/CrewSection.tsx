@@ -1,5 +1,5 @@
 import styles from './CrewSection.module.css';
-import crewImg from '../../assets/images/shreeumya.JPG';
+import crewImg from '../../assets/images/shreeumya.jpg';
 
 export const CrewSection = () => {
   return (
