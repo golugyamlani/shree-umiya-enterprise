@@ -35,6 +35,10 @@
   gap: 32px;
 }
 
+.headerSpacer {
+  width: 150px;
+}
+
 .navLink {
   text-decoration: none;
   font-size: 15px;
@@ -274,6 +278,10 @@
   }
 
   .actions {
+    display: none;
+  }
+
+  .headerSpacer {
     display: none;
   }
 
