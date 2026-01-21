@@ -12,6 +12,7 @@ function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="cookie-policy" element={<CookiePolicyPage />} />
           <Route path="products" element={<ProductsPage />} />
+          <Route path="products/:category" element={<ProductsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

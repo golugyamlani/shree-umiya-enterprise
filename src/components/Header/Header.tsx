@@ -13,10 +13,9 @@ const navLinks = [
 const categories = [
   { path: '/products/amenities', label: 'AMENITIES' },
   { path: '/products/bath', label: 'BATH' },
-  { path: '/products/platform-beds', label: 'PLATFORM BEDS' },
+  { path: '/products/bedding', label: 'BEDDING' },
   { path: '/products/furniture', label: 'FURNITURE' },
-  { path: '/products/paper-bio', label: 'PAPER & BIO PRODUCTS' },
-  { path: '/products/flooring', label: 'FLOORING' },
+  { path: '/products/platform-beds', label: 'PLATFORM BEDS' },
 ];
 
 export const Header = () => {

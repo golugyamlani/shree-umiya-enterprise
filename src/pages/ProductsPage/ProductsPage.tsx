@@ -1,4 +1,5 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import styles from './ProductsPage.module.css';
 
 // Import Amenities images
@@ -169,8 +170,18 @@ const categoryTitles: Record<Category, string> = {
 };
 
 export const ProductsPage = () => {
+  const { category } = useParams<{ category?: string }>();
   const [selectedCategory, setSelectedCategory] = useState<Category>('all');
   const [sortBy, setSortBy] = useState('recommended');
+
+  // Sync selected category with URL param
+  useEffect(() => {
+    if (category && categories.some((c) => c.id === category)) {
+      setSelectedCategory(category as Category);
+    } else {
+      setSelectedCategory('all');
+    }
+  }, [category]);
 
   const filteredProducts = useMemo(() => {
     if (selectedCategory === 'all') {
